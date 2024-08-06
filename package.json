@@ -1,0 +1,22 @@
+
+
+
+{
+  "name": "gift",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+     "sass": "node-sass styles.scss styles.css"
+    
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^9.0.0"
+  }
+  
+
+
+}

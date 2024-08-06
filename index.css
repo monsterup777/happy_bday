@@ -1,0 +1,245 @@
+body {
+    width: 100%;
+    overflow: hidden;
+    background-image: linear-gradient(#ff0000, #fff 60%, pink 80%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    color: white;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    max-height: 960px;
+    margin: auto;
+    margin-top: -100px;
+    background: rgba(0, 0, 0, 0);
+    padding: 40px;
+    border-radius: 20px;
+      
+    position: relative;
+}
+
+#message {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3%;
+    
+    color: rgb(41, 41, 41);
+    font-family: 'Coming Soon', cursive;
+    font-size: 175%;
+}
+
+#message h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 4em;
+    margin: 0.5em 0;
+    text-shadow: 2px 2px #ff0000;
+    color: #ffd700;
+}
+
+#message p {
+    position: relative;
+    right: 0;
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.5em;
+    margin: 1em 0;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    color: #f0e68c;
+}
+
+button {
+    padding: 15px 40px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 30px;
+    background-color: #ffd700;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    background-color: #f0e68c;
+    transform: scale(1.1);
+}
+
+.surprise {
+    display: none;
+    font-size: 3em;
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out;
+    color: #ff69b4;
+    
+}
+.surprise a{
+    text-decoration: none;
+    font-family: 'Great Vibes', cursive;
+    color:  #ffd700;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.heart {
+    position: absolute;
+    display: inline-block;
+    background-color: pink;
+    height: 50px;
+    width: 50px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    animation-name: drop;
+    animation-timing-function: ease-in;
+}
+
+.heart::after,
+.heart::before {
+    background-color: pink;
+    content: "";
+    border-radius: 50%;
+    position: absolute;
+}
+
+.heart::after {
+    width: 50px;
+    height: 50px;
+    top: 0;
+    left: 25px;
+}
+
+.heart::before {
+    width: 50px;
+    height: 50px;
+    top: -25px;
+    left: 0;
+}
+.heart-0 {
+    left: 0;
+    animation-duration: 3.4s;
+    animation-iteration-count: infinite;
+}
+
+.heart-1 {
+    left: 5%;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.heart-2 {
+    left: 15%;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+.heart-3 {
+    left: 25%;
+    animation-duration: 2.3s;
+    animation-iteration-count: infinite;
+}
+
+.heart-4 {
+    left: 35%;
+    animation-duration: 2.9s;
+    animation-iteration-count: infinite;
+}
+
+.heart-5 {
+    left: 45%;
+    animation-duration: 2.6s;
+    animation-iteration-count: infinite;
+}
+
+.heart-6 {
+    left: 55%;
+    animation-duration: 2.4s;
+    animation-iteration-count: infinite;
+}
+
+.heart-7 {
+    left: 65%;
+    animation-duration: 2.7s;
+    animation-iteration-count: infinite;
+}
+.heart-8 {
+    left: 75%;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+.heart-9 {
+    left: 85%;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.heart-10 {
+    left: 95%;
+    animation-duration: 3.2s;
+    animation-iteration-count: infinite;
+}
+.heart-11 {
+    left: 100%;
+    animation-duration: 3.4s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes drop {
+    0% {
+        top: -55px;
+    }
+    100% {
+        top: 900px;
+        opacity: 0.2;
+    }
+}
+
+@media only screen and (max-width: 1025px) {
+    body {
+        max-width: 60%;
+    }
+
+    #message {
+        left: 5%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #message {
+        padding: 0;
+        font-size: 150%;
+    }
+    #message p {
+        right: 5%;
+    }
+    .heart {
+        height: 25px;
+        width: 25px;
+    }
+    .heart::after {
+        width: 25px;
+        height: 25px;
+        left: 12.5px;
+    }
+    .heart::before {
+        width: 25px;
+        height: 25px;
+        top: -12.5px;
+    }
+}
+
+
